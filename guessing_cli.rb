@@ -3,8 +3,8 @@ require "pry"
 def run_guessing_game
   guess = nil
   puts "Guess a number between 1 and 6."
-  roll = rand(6)
   while guess != "exit"
+    roll = rand(6)
     guess = gets.chomp
     if guess.to_i == roll
       puts "You guessed the correct number!"
