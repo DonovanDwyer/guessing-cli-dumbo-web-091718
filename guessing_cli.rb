@@ -9,7 +9,7 @@ def run_guessing_game
     if guess.to_i == roll
       puts "You guessed the correct number!"
     elsif guess.to_i != roll
-      puts "The computer guessed #{roll}"
+      puts "The computer guessed #{roll}."
       guess = "exit"
     end
   end
