@@ -2,6 +2,7 @@ require "pry"
 
 def run_guessing_game
   guess = nil
+  while guess != "exit"
     puts "Guess a number between 1 and 6."
     roll = rand(6)
     guess = gets.chomp
